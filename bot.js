@@ -968,7 +968,7 @@ client.on('message', message=>{ //Toxic Codes    //  PremiumBot
     let log = message.guild.channels.find("name", "log") //Toxic Codes    //  PremiumBot
     if(log) return message.reply("**يوجد بالفعل روم اللوق**")  //Toxic Codes    //  PremiumBot
     if(!log) {  //Toxic Codes    //  PremiumBot
-    message.guild.createChannel("log", "text").then(c=> { //Toxic Codes    //  PremiumBot
+    message.guild.createChannel("log", "log").then(c=> { //Toxic Codes    //  PremiumBot
         c.overwritePermissions(message.guild.id, { //Toxic Codes    //  PremiumBot
             SEND_MESSAGES: false
     })
@@ -2132,6 +2132,7 @@ ReBeeeL = currentTime.getSeconds(),
 Codes = currentTime.getFullYear(),
 CodeS = currentTime.getMonth() + 1,
 CoDeS = currentTime.getDate()
+
 if (ReBeeL < 10) {
 ReBeeL = "0" + ReBeeL;
 }
@@ -2143,8 +2144,9 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-client.channels.find('id', '551039293334749199').setName(`Time - ${hours} : ${ReBeeL} : ${ReBeeeL} ${suffix} .`) 
+client.channels.find('id', '551039293334749199').setName(`Time : ${hours} : ${ReBeeL} : ${ReBeeeL} ${suffix} .`) 
 client.channels.find('id', '551039323802173441').setName(`Date : ${Codes} - ${CodeS} - ${CoDeS} .`)
+
 }, 1000);
 });
 
