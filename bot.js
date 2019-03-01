@@ -2143,9 +2143,9 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-client.channels.find('id', 'ايدي الروم').setName(`Time - ${hours} : ${ReBeeL} : ${ReBeeeL} ${suffix} .`) 
-client.channels.find('id', 'ايدي الروم').setName(`Date : ${Codes} - ${CodeS} - ${CoDeS} .`)
-client.channels.find('id', 'ايدي الروم').setName(`Voice : ${message.guild.members.filter(m => m.voiceChannel).size} .`)
+client.channels.find('id', '551039293334749199').setName(`Time - ${hours} : ${ReBeeL} : ${ReBeeeL} ${suffix} .`) 
+client.channels.find('id', '551039323802173441').setName(`Date : ${Codes} - ${CodeS} - ${CoDeS} .`)
+client.channels.find('id', '551039380064698368').setName(`Voice : ${message.guild.members.filter(m => m.voiceChannel).size} .`)
 }, 1000);
 });
 
