@@ -778,7 +778,7 @@ client.on('message', async message => {
     
 client.on('ready', () => {
         console.log(`back`);
-              client.user.setActivity("t!help | TopBot", {type: 'WATCHING'});
+              client.user.setActivity("t!help", {type: 'WATCHING'});
       
       });
 
@@ -2145,7 +2145,6 @@ hours = 12;
 }
 client.channels.find('id', '551039293334749199').setName(`Time - ${hours} : ${ReBeeL} : ${ReBeeeL} ${suffix} .`) 
 client.channels.find('id', '551039323802173441').setName(`Date : ${Codes} - ${CodeS} - ${CoDeS} .`)
-client.channels.find('id', '551039380064698368').setName(`Voice : ${message.guild.members.filter(m => m.voiceChannel).size} .`)
 }, 1000);
 });
 
